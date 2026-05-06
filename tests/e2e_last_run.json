@@ -1,0 +1,182 @@
+{
+  "passed": 29,
+  "failed": 0,
+  "total": 29,
+  "results": [
+    {
+      "name": "sidecar /api/health",
+      "ok": true,
+      "detail": "port=8044",
+      "durationMs": 7
+    },
+    {
+      "name": "sidecar /api/ffmpeg/status",
+      "ok": true,
+      "detail": "ffmpeg=C:\\Users\\merin_fontvza\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin\\ffmpeg.exe",
+      "durationMs": 150
+    },
+    {
+      "name": "sidecar /api/library",
+      "ok": true,
+      "detail": "voices=3 → jack_podcast, sam, ultron",
+      "durationMs": 3
+    },
+    {
+      "name": "sidecar /api/tts/status",
+      "ok": true,
+      "detail": "device=cuda voices=3 sr=24000",
+      "durationMs": 4
+    },
+    {
+      "name": "sidecar /api/tts/voices",
+      "ok": true,
+      "detail": "local=3 remote=3",
+      "durationMs": 5
+    },
+    {
+      "name": "sidecar /api/tts/speak (ultron, real audio)",
+      "ok": true,
+      "detail": "dur=3.2s sr=24000 audio_b64=204860 bytes",
+      "durationMs": 3707
+    },
+    {
+      "name": "sidecar /api/clip/extract (real ffmpeg)",
+      "ok": true,
+      "detail": "size=240078B path=…\\e2e_test_clip.wav",
+      "durationMs": 323
+    },
+    {
+      "name": "vite / (renderer html)",
+      "ok": true,
+      "detail": "bytes=735",
+      "durationMs": 3
+    },
+    {
+      "name": "vite proxy → /api/health",
+      "ok": true,
+      "detail": "proxied to sidecar",
+      "durationMs": 3
+    },
+    {
+      "name": "vite proxy → /api/asset/ram-logo",
+      "ok": true,
+      "detail": "1232 KB image/png",
+      "durationMs": 7
+    },
+    {
+      "name": "voice library reflects rename to Glitch_Voice",
+      "ok": true,
+      "detail": "displayName=\"Glitch_Voice\"",
+      "durationMs": 4
+    },
+    {
+      "name": "voice profile load default (ultron)",
+      "ok": true,
+      "detail": "defaults loaded, tts.exaggeration=0.65",
+      "durationMs": 1
+    },
+    {
+      "name": "voice profile save round-trip (ultron)",
+      "ok": true,
+      "detail": "saved → voice_profiles/ultron.json, reload OK",
+      "durationMs": 5
+    },
+    {
+      "name": "speak forwards exaggeration + cfg_weight",
+      "ok": true,
+      "detail": "dur=2.84s audio_b64=181820",
+      "durationMs": 3538
+    },
+    {
+      "name": "mood baselines list (20 prebuilt × 3 voices)",
+      "ok": true,
+      "detail": "moods=20 voices=sam,jack_podcast,ultron",
+      "durationMs": 1
+    },
+    {
+      "name": "mood load baseline (ultron / sinister)",
+      "ok": true,
+      "detail": "ex=0.65 cfg=0.4",
+      "durationMs": 0
+    },
+    {
+      "name": "mood save → load → revert round-trip (sam / excited)",
+      "ok": true,
+      "detail": "save+reload+revert OK",
+      "durationMs": 9
+    },
+    {
+      "name": "mood fx round-trip (jack_podcast / sinister)",
+      "ok": true,
+      "detail": "11 fx fields persisted & cleaned up",
+      "durationMs": 8
+    },
+    {
+      "name": "asset roots reachable",
+      "ok": true,
+      "detail": "roots=1, ramsnd=true",
+      "durationMs": 1
+    },
+    {
+      "name": "asset list returns items",
+      "ok": true,
+      "detail": "items=15 images=4",
+      "durationMs": 4
+    },
+    {
+      "name": "asset file streaming",
+      "ok": true,
+      "detail": "1232 KB image/png",
+      "durationMs": 8
+    },
+    {
+      "name": "asset path traversal blocked",
+      "ok": true,
+      "detail": "blocked with status 403",
+      "durationMs": 1
+    },
+    {
+      "name": "episode save → load → handoff → delete",
+      "ok": true,
+      "detail": "save+load+handoff+delete OK, md=1144 chars",
+      "durationMs": 14
+    },
+    {
+      "name": "claude CLI status reachable (presence only)",
+      "ok": true,
+      "detail": "claude=C:\\Users\\merin_fontvza\\AppData\\Roaming\\npm\\claude",
+      "durationMs": 181
+    },
+    {
+      "name": "episode cast persists modelPath + handoff includes 3D",
+      "ok": true,
+      "detail": "modelPath persisted, handoff lists 3D model",
+      "durationMs": 12
+    },
+    {
+      "name": "3d candidate stage → update → delete",
+      "ok": true,
+      "detail": "stage+update+delete OK (image=RAM_Lette_Logo.png)",
+      "durationMs": 13
+    },
+    {
+      "name": "3d glb auto-discovery",
+      "ok": true,
+      "detail": "5 discovered (e.g. 3d jack.glb)",
+      "durationMs": 2
+    },
+    {
+      "name": "system/open guards untrusted paths",
+      "ok": true,
+      "detail": "blocked (403)",
+      "durationMs": 1
+    },
+    {
+      "name": "electron window present",
+      "ok": true,
+      "detail": "windows=1",
+      "durationMs": 469
+    }
+  ],
+  "generatedAt": "2026-04-27T21:21:45.396Z"
+}

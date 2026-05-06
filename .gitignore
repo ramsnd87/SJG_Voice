@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-electron
+data/clips
+data/staged_voices
+data/episodes/*/output/
+data/episodes/*/render/
+data/episodes/**/*.wav
+data/episodes/**/*.mp4
+data/episodes/**/*.png
+*.log
+.DS_Store

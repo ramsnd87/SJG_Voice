@@ -1,0 +1,303 @@
+import fs from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(__dirname, "..");
+const summary = JSON.parse(await fs.readFile(path.join(ROOT, "tests", "e2e_last_run.json"), "utf8"));
+
+const passClass = (ok) => ok ? "pass" : "fail";
+const passLabel = (ok) => ok ? "PASS" : "FAIL";
+
+function escape(s) {
+  return String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" })[c]);
+}
+
+const generatedLocal = new Date(summary.generatedAt).toLocaleString("en-US", { dateStyle: "full", timeStyle: "long" });
+
+const checks = summary.results.map((r) => `
+        <tr class="${passClass(r.ok)}">
+          <td><span class="badge ${passClass(r.ok)}">${passLabel(r.ok)}</span></td>
+          <td><strong>${escape(r.name)}</strong></td>
+          <td><code>${escape(r.detail)}</code></td>
+          <td class="num">${r.durationMs}ms</td>
+        </tr>`).join("");
+
+const html = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Glitch Studio Builder — Integration Report</title>
+<style>
+  :root {
+    --bg-0: #07060c; --bg-1: #0d0c14; --bg-card: #161421;
+    --line: #2a2740; --line-soft: #221f33;
+    --text: #e8e5f5; --text-soft: #b9b3d4; --muted: #7d7798;
+    --accent: #d99a3a; --accent-soft: #f5c97e; --accent-deep: #8b5a1b;
+    --good: #6cd28a; --warn: #ff8a5c; --danger: #ff5a78;
+    --serif: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    --sans: "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--sans);
+    background: radial-gradient(ellipse at top, #1c1830 0%, var(--bg-0) 60%);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 36px 28px 60px; }
+  header {
+    display: flex; align-items: center; gap: 18px;
+    background: linear-gradient(180deg, var(--bg-card) 0%, #110f1c 100%);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 22px 26px;
+    box-shadow: 0 22px 48px rgba(0, 0, 0, 0.55);
+    margin-bottom: 30px;
+  }
+  .logo {
+    width: 76px; height: 76px;
+    display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--accent-deep), var(--accent));
+    color: #1a1206;
+    font-family: var(--serif);
+    font-weight: 800;
+    font-size: 28px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(217, 154, 58, 0.35);
+  }
+  header h1 { font-family: var(--serif); margin: 0; font-size: 28px; letter-spacing: 0.4px; }
+  header p { margin: 4px 0 0; color: var(--text-soft); font-size: 14px; }
+  header .stamp { margin-left: auto; text-align: right; color: var(--muted); font-size: 12px; }
+
+  .summary {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 30px;
+  }
+  .stat {
+    background: var(--bg-card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .stat .num { font-family: var(--serif); font-size: 32px; line-height: 1; color: var(--accent-soft); }
+  .stat .lbl { display: block; margin-top: 6px; color: var(--muted); font-size: 11.5px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .stat.pass .num { color: var(--good); }
+  .stat.fail .num { color: var(--danger); }
+  .stat.fail.zero .num { color: var(--good); }
+
+  section { background: var(--bg-card); border: 1px solid var(--line); border-radius: 14px; padding: 22px 26px; margin-bottom: 22px; box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45); }
+  section h2 { font-family: var(--serif); margin: 0 0 14px; color: var(--accent-soft); font-size: 18px; letter-spacing: 0.3px; }
+  section p { color: var(--text-soft); margin: 0 0 12px; line-height: 1.55; }
+
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line-soft); vertical-align: top; font-size: 13.5px; }
+  th { color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px; }
+  td.num { font-family: ui-monospace, "Cascadia Code", "Consolas", monospace; color: var(--text-soft); white-space: nowrap; }
+  td code { color: var(--accent-soft); font-family: ui-monospace, "Cascadia Code", "Consolas", monospace; font-size: 12px; word-break: break-all; }
+  tr.pass td { background: rgba(108, 210, 138, 0.04); }
+  tr.fail td { background: rgba(255, 90, 120, 0.06); }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; }
+  .badge.pass { background: rgba(108, 210, 138, 0.18); color: var(--good); }
+  .badge.fail { background: rgba(255, 90, 120, 0.18); color: var(--danger); }
+
+  .fixed-list, .scope-list { margin: 0; padding-left: 22px; color: var(--text-soft); line-height: 1.7; }
+  .fixed-list code, .scope-list code { background: var(--bg-1); padding: 1px 6px; border-radius: 4px; font-size: 12px; color: var(--accent-soft); }
+  .arch {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+  }
+  .arch .layer { border: 1px solid var(--line-soft); background: var(--bg-1); border-radius: 10px; padding: 14px 16px; }
+  .arch .layer h3 { font-family: var(--serif); font-size: 14px; margin: 0 0 6px; color: var(--accent-soft); }
+  .arch .layer p { margin: 0; color: var(--text-soft); font-size: 12.5px; line-height: 1.5; }
+  .arch .layer .port { color: var(--muted); font-family: ui-monospace, "Cascadia Code", monospace; font-size: 11px; }
+
+  footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 28px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">GS</div>
+    <div>
+      <h1>Glitch Studio Builder — Integration Report</h1>
+      <p>Voice cloning · clip prep · cast routing — full end-to-end audit</p>
+    </div>
+    <div class="stamp">
+      Generated<br/>${escape(generatedLocal)}
+    </div>
+  </header>
+
+  <div class="summary">
+    <div class="stat"><div class="num">${summary.total}</div><span class="lbl">Total checks</span></div>
+    <div class="stat pass"><div class="num">${summary.passed}</div><span class="lbl">Passed</span></div>
+    <div class="stat fail ${summary.failed === 0 ? "zero" : ""}"><div class="num">${summary.failed}</div><span class="lbl">Failed</span></div>
+    <div class="stat"><div class="num">${Math.round(summary.results.reduce((s, r) => s + r.durationMs, 0))}<span style="font-size:14px;color:var(--muted);">ms</span></div><span class="lbl">Total runtime</span></div>
+  </div>
+
+  <section>
+    <h2>Architecture under test</h2>
+    <div class="arch">
+      <div class="layer">
+        <h3>Renderer (Vite)</h3>
+        <p class="port">http://127.0.0.1:5193</p>
+        <p>React + TypeScript UI. Four panes: Voice Lab, Library, Clip Studio, Cast Routing. Proxies <code>/api</code> to the sidecar.</p>
+      </div>
+      <div class="layer">
+        <h3>Sidecar (Node)</h3>
+        <p class="port">http://127.0.0.1:8044</p>
+        <p>Local HTTP service. Proxies EnginSam TTS, runs ffmpeg for clip extraction, scans voice library roots, serves the RAM banner asset.</p>
+      </div>
+      <div class="layer">
+        <h3>EnginSam TTS</h3>
+        <p class="port">http://127.0.0.1:8018</p>
+        <p>Chatterbox TTS on CUDA. Voice profiles: <code>sam</code>, <code>jack_podcast</code>, <code>ultron</code>. Sample rate 24 kHz.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Issues found and resolved</h2>
+    <ol class="fixed-list">
+      <li><strong>EnginSam TTS not running</strong> — booted <code>tts_server.py</code> via the local venv. Chatterbox loaded on CUDA, model ready, sample rate 24 kHz.</li>
+      <li><strong>Ultron voice missing from EnginSam TTS</strong> — the SAM_PODCAST mirror existed but the actual TTS engine reads from <code>EnginSam\\tts-server\\voices\\</code>. Added (no overwrite) <code>ultron</code> profile next to <code>sam</code> and <code>jack_podcast</code>. EnginSam now lists 3 voices.</li>
+      <li><strong>RAM logo broken in banner</strong> — renderer is served over <code>http://</code>, browsers block <code>file://</code> resources. Added a sidecar route <code>GET /api/asset/ram-logo</code> that streams the PNG with proper <code>image/png</code> headers. Banner enlarged (64×64), framed, drop-shadow tuned.</li>
+      <li><strong>Vite bound to <code>localhost</code> (IPv6) while Electron / wait-on used <code>127.0.0.1</code> (IPv4)</strong> — Electron hung at startup. Fixed by setting <code>server.host = "127.0.0.1"</code> in <code>vite.config.ts</code>.</li>
+      <li><strong>Duplicate <code>ultron</code> entries in the library</strong> — voice exists in both SAM_PODCAST mirror and EnginSam engine roots; UI showed it twice. Sidecar <code>listLocalVoices()</code> now dedupes by slug, EnginSam-engine wins. Library lists 4 unique voices.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>New in this iteration — Per-card Save buttons</h2>
+    <ul class="scope-list">
+      <li><strong>Each cast card</strong> now has a green <strong>Save</strong> button next to <em>Remove</em>, with a "Saved ✓" tag that flashes after the click. No more hunting for the top-of-pane Save.</li>
+      <li><strong>Cast section header</strong> shows the <em>last saved</em> timestamp and a <strong>Save cast</strong> button — saves all cast members in one click.</li>
+      <li><strong>Settings section</strong> got the same treatment: per-card Save and a header-level Save settings button.</li>
+      <li><strong>One source of truth:</strong> Save still persists the entire episode (cast + settings + script + chat) to <code>data/episodes/&lt;id&gt;/episode.json</code>. The granular Save buttons just give you confidence and surface area without changing the underlying contract.</li>
+      <li><strong>Handoff already auto-saves</strong> first, then writes the markdown brief — your image and 3D model paths always make it into the bundle Claude reads.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Earlier iteration — 3D models in cast cards</h2>
+    <ul class="scope-list">
+      <li><strong>Cast members can carry an attached <code>.glb</code> / <code>.gltf</code> 3D model</strong> alongside (or instead of) a 2D reference image.</li>
+      <li><strong>Inline 3D viewer</strong> in each cast card — full <code>&lt;model-viewer&gt;</code> with camera controls, auto-rotate, soft shadows. Drag to rotate, scroll to zoom.</li>
+      <li><strong>Pick 3D model</strong> button opens the asset picker pre-filtered to model files. Picker thumbnails for <code>.glb</code> are themselves live mini-viewers — preview before you pick.</li>
+      <li><strong>Replace / Clear 3D</strong> actions sit alongside image controls. Image fallback still works if no model is set.</li>
+      <li><strong>Handoff markdown</strong> now lists the 3D model path per cast member so Claude (or any downstream tool) knows the visual reference is a rigged/textured 3D asset.</li>
+      <li><strong>Persistence:</strong> <code>modelPath</code> rides with the episode JSON; the e2e check verifies <code>SAM3d.glb</code> survives a save → reload → handoff round-trip.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Earlier iteration — 3D Builder + Script Composer</h2>
+    <ul class="scope-list">
+      <li><strong>7th tab "3D Builder"</strong> — manages an image-to-3D workflow without locking you to one provider.</li>
+      <li><strong>Stage images:</strong> pick from RAM SND Asset (image kind only) into a candidate queue stored in <code>data/3d_candidates.json</code>.</li>
+      <li><strong>One-click open in your tool of choice</strong> — Meshy.ai · Tripo3D · Luma Genie · Rodin (Hyper3D). Sidecar shells out to the OS default browser via <code>start "" &lt;url&gt;</code>.</li>
+      <li><strong>Attach completed .glb</strong> — Electron file picker links the downloaded model back to its candidate. Status flips to <em>Complete</em>.</li>
+      <li><strong>Open .glb in Windows 3D Viewer</strong> with one click. Sidecar guards: only paths under configured asset roots or this project can be launched.</li>
+      <li><strong>Auto-discovered models</strong> — <code>.glb</code> / <code>.gltf</code> already in your asset folder show up in a separate gallery (you already have <code>SAM3d.glb</code>, <code>3d jack.glb</code>, two Meshy_AI exports). Click any to open in Windows 3D Viewer.</li>
+      <li><strong>Script composer in Create Podcast</strong> — toolbar above the script textarea with three inserters wired into the cursor:</li>
+      <ul>
+        <li><strong>Speaker</strong> dropdown drawn from the episode's cast list.</li>
+        <li><strong>Tone</strong> dropdown drawn from the live mood library — full label + description in the option text. Selecting a tone shows its sample line as a yellow hint so it's clear how that delivery sounds.</li>
+        <li><strong>Insert dialogue line</strong> drops <code>[Speaker | Tone] </code> at the cursor with smart leading newline.</li>
+        <li><strong>SFX</strong> input with autocomplete from 22 common cues (door slam, applause, music sting, …); plus a <strong>+ chip row</strong> for the top 12 quick-picks.</li>
+        <li><strong>Pick from audio assets</strong> opens a modal that shows audio files in RAM SND Asset and inserts <code>[SFX: filename]</code>.</li>
+      </ul>
+      <li><strong>Path-traversal guards</strong> on both <code>/api/assets/file</code> and <code>/api/system/open</code> — the harness verifies <code>System32\\notepad.exe</code> and <code>System32\\drivers\\etc\\hosts</code> are blocked.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Earlier iteration — Create Podcast tab</h2>
+    <ul class="scope-list">
+      <li><strong>Episode workspace</strong> with title, director notes, and a one-click "open existing episode" picker. Each episode persists at <code>data/episodes/&lt;id&gt;/episode.json</code>.</li>
+      <li><strong>Cast configuration:</strong> add cast members with display name, voice (drop-down from the live library), mood (drop-down from the 20 prebuilt moods), role, and a reference image plucked from <code>RAM SND Asset</code>.</li>
+      <li><strong>Settings &amp; scene images:</strong> repeatable cards with label + image picked from the asset browser.</li>
+      <li><strong>Asset picker modal</strong> reads <code>C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\RAM SND Asset</code> (read-only). Filter by name, kind (images / video / 3D / all). Path-traversal blocked: only paths under configured asset roots are streamed.</li>
+      <li><strong>Script editor</strong> — monospace text area, the canonical script for the episode. Whatever's here goes into the handoff.</li>
+      <li><strong>Claude CMD box</strong> — chat interface that pipes prompt + cast + settings + script into the local <code>claude --print</code> CLI via the sidecar. Status chip shows whether claude is on PATH; falls back gracefully when offline.</li>
+      <li><strong>Generate handoff</strong> — bundles everything into <code>data/episodes/&lt;id&gt;/handoff.md</code> (markdown brief) and <code>handoff.json</code> (full structured snapshot). Markdown preview displayed in-pane with one-click copy.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Earlier iteration — Sound Design FX</h2>
+    <ul class="scope-list">
+      <li><strong>11 new sliders per mood</strong> on top of Exaggeration / cfg_weight, grouped into Playback · EQ · Color · Echo &amp; Stereo.</li>
+      <li><strong>Playback:</strong> Rate (0.5–1.5×) · Volume (0–2×, master gain).</li>
+      <li><strong>EQ:</strong> Bass (low shelf, 250 Hz, ±12 dB) · Presence (peaking, 2 kHz, ±12 dB) · Treble (high shelf, 4.5 kHz, ±12 dB).</li>
+      <li><strong>Color:</strong> Drive (waveshaper saturation) · Reverb mix (convolver with synthetic IR) · Compression (one-knob: threshold + ratio).</li>
+      <li><strong>Echo &amp; Stereo:</strong> Echo mix · Echo time (40–800 ms) · Stereo pan (-1 left … +1 right).</li>
+      <li><strong>Live audio chain</strong> built with the Web Audio API: <code>MediaElementSource → drive → 3-band EQ → comp → split (dry / convolver / delay+feedback) → stereo pan → master gain → destination</code>. Slider changes update parameters in real time on the playing audio.</li>
+      <li><strong>"Reset FX to flat"</strong> button restores all 11 dials to neutral without losing your sample line or synthesis values.</li>
+      <li><strong>Persistence:</strong> the full <code>fx</code> object is saved alongside Exaggeration / cfg_weight in the per-voice override file. Reload returns to the exact mix you set.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Earlier iteration — Mood Library</h2>
+    <ul class="scope-list">
+      <li><strong>Voice Workshop has two subtabs now:</strong> "Single Voice" (the editor from the previous iteration) and "Mood Library" (new).</li>
+      <li><strong>20 curated mood presets</strong> — Excited, Calm, Sarcastic, Happy, Sad, Sinister, Heroic, Whispered, Commanding, Fearful, Angry, Tender, Confident, Confused, Mysterious, Playful, Exhausted, Determined, Mocking, Reverent.</li>
+      <li><strong>3 prebuilt voices selectable as chips:</strong> SAM, Jack_Podcast, Glitch_Voice. Switch between them with one click; per-voice overrides are tracked independently.</li>
+      <li><strong>Each mood has a curated sample line + tuned synthesis dials</strong> (exaggeration / cfg_weight) so the user hears the mood the way it was written.</li>
+      <li><strong>Per-voice save:</strong> editing a mood for SAM doesn't change the same mood for Glitch_Voice. Saved overrides land in <code>data/voice_moods/&lt;slug&gt;/&lt;mood&gt;.json</code> inside the app.</li>
+      <li><strong>Discard edits</strong> reloads the current saved value (or baseline). <strong>Reset to baseline</strong> deletes the override entirely so the next load returns the original preset.</li>
+      <li><strong>Customised badge</strong> on every card that has a saved override, so it's easy to see what's been tweaked.</li>
+      <li><strong>Live preview</strong> uses the slider values currently on screen — including unsaved edits — so the user can iterate without committing.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Earlier iteration — Voice Workshop</h2>
+    <ul class="scope-list">
+      <li><strong>5th tab "Voice Workshop"</strong> — pick any voice and edit its identity, character dials, and synthesis parameters.</li>
+      <li><strong>Identity:</strong> display name, voice type (character / narrator / antagonist / robotic / broadcaster / …), archetype, language, description.</li>
+      <li><strong>Character dials</strong> (jack-style): tone, drawl, grit, warmth, humor, pacing, accent, mood — each with curated suggestions.</li>
+      <li><strong>Synthesis sliders:</strong> exaggeration (0.1–1.5), cfg_weight (0.1–1.0). Wired through sidecar to EnginSam's Chatterbox <code>/speak</code>.</li>
+      <li><strong>Playback sliders:</strong> rate, pitch, volume — applied to the preview audio element.</li>
+      <li><strong>Sample text + notes</strong> stored per profile. Preview button synthesizes with the live settings before saving.</li>
+      <li><strong>Save target:</strong> <code>data/voice_profiles/&lt;slug&gt;.json</code> inside Glitch Studio Builder only. The source voice library files in EnginSam and SAM_PODCAST are not modified.</li>
+      <li><strong>Display rename:</strong> "Ultron Impression Voice" → <code>Glitch_Voice</code> in both library mirrors. Slug stays as <code>ultron</code> so existing references continue to work.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Endpoint &amp; integration checks</h2>
+    <table>
+      <thead>
+        <tr><th>Result</th><th>Check</th><th>Detail</th><th class="num">Time</th></tr>
+      </thead>
+      <tbody>${checks}
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>What is verified</h2>
+    <ul class="scope-list">
+      <li>Local sidecar boots and answers <code>/api/health</code>.</li>
+      <li>ffmpeg discovered on PATH and reachable from sidecar.</li>
+      <li>Voice library roots scanned, voices deduped by slug.</li>
+      <li>EnginSam TTS reachable via sidecar proxy, model loaded, voices enumerated.</li>
+      <li><strong>Real audio synthesized</strong> for the <code>ultron</code> voice end-to-end.</li>
+      <li><strong>Real ffmpeg extraction</strong> writes a 24 kHz mono WAV under <code>data/clips/</code>.</li>
+      <li>Vite renderer responds, proxy forwards <code>/api</code> to sidecar.</li>
+      <li>Banner asset (RAM logo) served as <code>image/png</code> ~1.2 MB, no <code>file://</code> in DOM.</li>
+      <li>Electron window present with title <em>Glitch Studio Builder · v0.1.0</em>.</li>
+    </ul>
+  </section>
+
+  <footer>
+    Generated by Glitch_Studio_Builder/scripts/build_report.mjs · raw data in <code>tests/e2e_last_run.json</code>
+  </footer>
+</div>
+</body>
+</html>
+`;
+
+const out = path.join(ROOT, "tests", "integration_report.html");
+await fs.writeFile(out, html, "utf8");
+console.log(out);

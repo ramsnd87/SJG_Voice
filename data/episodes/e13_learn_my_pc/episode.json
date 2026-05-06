@@ -1,0 +1,104 @@
+{
+  "id": "e13_learn_my_pc",
+  "title": "Sam, Jack & Glitch Review — Learn My PC (The Task View Files)",
+  "directorNotes": "Enhanced 3-character production. Sam left, Glitch center monitor, Jack right. Glitch speaks in a slow, deliberate southern-Reddington cadence — worldly, sardonic, measured. More Glitch lines. Focus on how fast Alex solved it. Full Wisdom for the Wind outro. Wav2Lip mouth flap per speaker. Camera zooms to active speaker.",
+  "cast": [
+    { "id": "c1", "displayName": "SAM",   "voiceSlug": "sam",          "role": "host",    "moodId": "confident", "imagePath": "", "modelPath": "", "notes": "Grounded, factual. Delivers the key beats." },
+    { "id": "c2", "displayName": "Jack",  "voiceSlug": "jack_podcast", "role": "co-host", "moodId": "playful",   "imagePath": "", "modelPath": "", "notes": "Reactive, quick, gets the punchlines." },
+    { "id": "c3", "displayName": "Glitch","voiceSlug": "ultron",       "role": "screen",  "moodId": "commanding","imagePath": "", "modelPath": "", "notes": "Center monitor. Southern Reddington — deliberate, theatrical, sardonic. Commands the room without raising his voice." }
+  ],
+  "settings": [
+    { "id": "s1", "label": "Studio: Command Center", "imagePath": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\finished_work\\RAM_Video_Editing\\animation-service\\rendered_refs\\studio_bg_v3.png" }
+  ],
+  "renderLines": [
+    {
+      "voiceSlug": "sam",
+      "moodId": "confident",
+      "text": "Welcome back to Sam and Jack Hack. Today — Alex built something. And the story of why he built it is almost as good as what it does."
+    },
+    {
+      "voiceSlug": "jack_podcast",
+      "moodId": "playful",
+      "text": "Alex's Windows was doing the thing. Task View — just flying up out of nowhere, uninvited, over and over. He called it an intense amount of frustration."
+    },
+    {
+      "voiceSlug": "sam",
+      "moodId": "confident",
+      "text": "The internet's first answer: bad keyboard. Win+Tab stuck key. Replace the hardware. Which — not unreasonable advice. A stuck Windows key would do exactly this."
+    },
+    {
+      "voiceSlug": "jack_podcast",
+      "moodId": "playful",
+      "text": "But Alex did not run to the store. He opened Codex. And in ten minutes — ten minutes — he had a full diagnostic tool running."
+    },
+    {
+      "voiceSlug": "sam",
+      "moodId": "confident",
+      "text": "Ten minutes. Learn My PC. Real-time event capture, structured JSON logs to the millisecond, a diagnosis engine, and remediation scripts. All of it. Ten minutes."
+    },
+    {
+      "voiceSlug": "ultron",
+      "moodId": "commanding",
+      "text": "Now. I want you to sit with that for a moment. Ten minutes. You know what most folks do in ten minutes when their computer misbehaves? They spend nine of 'em composin' an angry post on Reddit."
+    },
+    {
+      "voiceSlug": "jack_podcast",
+      "moodId": "excited",
+      "text": "The tool watches everything — Win+Tab keystrokes, taskbar mouse clicks, window focus changes. Every event timestamped to the millisecond in structured JSON logs."
+    },
+    {
+      "voiceSlug": "ultron",
+      "moodId": "sinister",
+      "text": "And when those logs spoke — they were very specific. There is a kind of clarity that only good instrumentation provides. And those logs had it."
+    },
+    {
+      "voiceSlug": "sam",
+      "moodId": "confident",
+      "text": "Logitech Download Assistant — on startup, sitting in the keyboard event chain. ASUS Armoury Crate — lurking in the background. Both sending phantom Win+Tab signals."
+    },
+    {
+      "voiceSlug": "ultron",
+      "moodId": "mocking",
+      "text": "Two uninvited house guests, settled in like they owned the place. Sendin' phantom signals. Orderly. Persistent. Bless their hearts — absolutely shameless."
+    },
+    {
+      "voiceSlug": "sam",
+      "moodId": "confident",
+      "text": "The keyboard was completely innocent. The tool caught the real culprits, backed up the registry, remapped Win+Tab through PowerToys, and cleaned the startup chain. Done."
+    },
+    {
+      "voiceSlug": "jack_podcast",
+      "moodId": "playful",
+      "text": "Without those logs he buys a new keyboard. Problem does not go away. He is back on that forum in a week."
+    },
+    {
+      "voiceSlug": "ultron",
+      "moodId": "determined",
+      "text": "And that keyboard — perfectly good keyboard — would have sat there, innocent and confused, while the actual culprits carried on undisturbed. I have seen that story end badly more times than I care to count."
+    },
+    {
+      "voiceSlug": "sam",
+      "moodId": "confident",
+      "text": "The tool found it, fixed it, and closed the case — start to finish in one session. That is what good diagnostic tooling does. Learn My PC. Solid work, Alex."
+    },
+    {
+      "voiceSlug": "ultron",
+      "moodId": "commanding",
+      "text": "Built in ten minutes. Solved what hours of forum-crawlin' could not. Now I'll tell ya — I do not hand out compliments lightly. But Alex earned this one. Genuinely."
+    },
+    {
+      "voiceSlug": "jack_podcast",
+      "moodId": "playful",
+      "text": "I'm Jack. Check your startup processes before you blame the keyboard."
+    },
+    {
+      "voiceSlug": "ultron",
+      "moodId": "sinister",
+      "text": "And I'm Glitch. I am on the monitor. As always. They say I interfere with the Wi-Fi. I say the Wi-Fi lacks the good manners to step aside."
+    }
+  ],
+  "script": "",
+  "claudeChat": [],
+  "createdAt": "2026-05-03T00:00:00.000Z",
+  "updatedAt": "2026-05-03T21:30:00.000Z"
+}

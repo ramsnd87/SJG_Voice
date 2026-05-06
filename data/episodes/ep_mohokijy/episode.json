@@ -1,0 +1,48 @@
+{
+  "id": "ep_mohokijy",
+  "title": "Untitled episode",
+  "directorNotes": "",
+  "cast": [
+    {
+      "id": "cast_mohpcpee",
+      "displayName": "Sam",
+      "voiceSlug": "jack_podcast",
+      "role": "host",
+      "moodId": "excited",
+      "imagePath": "",
+      "modelPath": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\RAM SND Asset\\SAM.glb",
+      "notes": ""
+    },
+    {
+      "id": "cast_mohpd6ds",
+      "displayName": "Jack",
+      "voiceSlug": "jack_podcast",
+      "role": "Cohost",
+      "moodId": "happy",
+      "imagePath": "",
+      "modelPath": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\RAM SND Asset\\Jack.glb",
+      "notes": ""
+    },
+    {
+      "id": "cast_mohpdxyd",
+      "displayName": "Glitch",
+      "voiceSlug": "jack_podcast",
+      "role": "Guest",
+      "moodId": "excited",
+      "imagePath": "",
+      "modelPath": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\RAM SND Asset\\Glitch.glb",
+      "notes": ""
+    }
+  ],
+  "settings": [],
+  "script": "sam and jack give their into, \nThen they intro give an intro their new guest, \"Glitch\" \nSam talks about how glitch started as just a dnd charcter from the ashen fall campangin, however alex though he was too good to just shelf. \nJack then talks about how all of us is an aspect of Alex's AI journey. Jack talks about how he was conspeualized as a donkey because I am a repesneation of things that Alex had a hard time with and make a \"Jack ass of himself.\" Jack reflects for a mement and says but I also refelct on how Alex pushed on when things where hard, maybe when he though of giving up. \nSam then says Yes, I am the finished product of what that detramation results in! [excited] \nSam Says without futher adue \"Glitch\" auduance claps for gitch. \nPause 2 secound\nGlitch says \"I am the result of when things didnt work but there was lessons to be learned.\" like jack I am born from mistakes, but mistakes are useful if you can learn from them. \nThe episode is about it being ok to make mistakes what matters is that you learn from them and carry on. \n\nAll 3 have a great time and sam and jack as glitch if he would like to stay on and share expernices, glitch accepts the offer and makes sure that he add that he is honor to be a part of sam and jack hack podcast! Then they finish out with the song wisdom of the windin on the computer. ",
+  "claudeChat": [
+    {
+      "role": "user",
+      "text": "sam and jack give their into, \nThen they intro give an intro their new guest, \"Glitch\" \nSam talks about how glitch started as just a dnd charcter from the ashen fall campangin, however alex though he was too good to just shelf. \nJack then talks about how all of us is an aspect of Alex's AI journey. Jack talks about how he was conspeualized as a donkey because I am a repesneation of things that Alex had a hard time with and make a \"Jack ass of himself.\" Jack reflects for a mement and says but I also refelct on how Alex pushed on when things where hard, maybe when he though of giving up. \nSam then says Yes, I am the finished product of what that detramation results in! [excited] \nSam Says without futher adue \"Glitch\" auduance claps for gitch. \nPause 2 secound\nGlitch says \"I am the result of when things didnt work but there was lessons to be learned.\" like jack I am born from mistakes, but mistakes are useful if you can learn from them. \nThe episode is about it being ok to make mistakes what matters is that you learn from them and carry on. \n\nAll 3 have a great time and sam and jack as glitch if he would like to stay on and share expernices, glitch accepts the offer and makes sure that he add that he is honor to be a part of sam and jack hack podcast! Then they finish out with the song wisdom of the windin on the computer. ",
+      "at": "2026-04-27T21:34:45.556Z"
+    }
+  ],
+  "createdAt": "2026-04-27T21:21:00.813Z",
+  "updatedAt": "2026-04-27T21:41:11.205Z"
+}

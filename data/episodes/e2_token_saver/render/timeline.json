@@ -1,0 +1,784 @@
+[
+  {
+    "id": "L01",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\001_L01_sam.wav",
+    "who": "sam",
+    "line": "L01"
+  },
+  {
+    "id": "L01",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\002_L01_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L02",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\003_L02_jack.wav",
+    "who": "jack",
+    "line": "L02"
+  },
+  {
+    "id": "L02",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\004_L02_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L03",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\005_L03_sam.wav",
+    "who": "sam",
+    "line": "L03"
+  },
+  {
+    "id": "L03",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\006_L03_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L04",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\007_L04_glitch.wav",
+    "who": "glitch",
+    "line": "L04"
+  },
+  {
+    "id": "L04",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\008_L04_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L05",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\009_L05_jack.wav",
+    "who": "jack",
+    "line": "L05"
+  },
+  {
+    "id": "L05",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\010_L05_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L06",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\011_L06_glitch.wav",
+    "who": "glitch",
+    "line": "L06"
+  },
+  {
+    "id": "L06",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\012_L06_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L07",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\013_L07_glitch.wav",
+    "who": "glitch",
+    "line": "L07"
+  },
+  {
+    "id": "L07",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\014_L07_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L08",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\015_L08_glitch.wav",
+    "who": "glitch",
+    "line": "L08"
+  },
+  {
+    "id": "L08",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\016_L08_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L09",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\017_L09_sam.wav",
+    "who": "sam",
+    "line": "L09"
+  },
+  {
+    "id": "L09",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\018_L09_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L10",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\019_L10_jack.wav",
+    "who": "jack",
+    "line": "L10"
+  },
+  {
+    "id": "L10",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\020_L10_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L11",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\021_L11_jack.wav",
+    "who": "jack",
+    "line": "L11"
+  },
+  {
+    "id": "L11",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\022_L11_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L12",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\023_L12_jack.wav",
+    "who": "jack",
+    "line": "L12"
+  },
+  {
+    "id": "L12",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\024_L12_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L13",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\025_L13_sam.wav",
+    "who": "sam",
+    "line": "L13"
+  },
+  {
+    "id": "L13",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\026_L13_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L13a",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\027_L13a_sam.wav",
+    "who": "sam",
+    "line": "L13a"
+  },
+  {
+    "id": "L13a",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\028_L13a_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L13b",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\029_L13b_jack.wav",
+    "who": "jack",
+    "line": "L13b"
+  },
+  {
+    "id": "L13b",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\030_L13b_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L13c",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\031_L13c_glitch.wav",
+    "who": "glitch",
+    "line": "L13c"
+  },
+  {
+    "id": "L13c",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\032_L13c_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L14",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\033_L14_sam.wav",
+    "who": "sam",
+    "line": "L14"
+  },
+  {
+    "id": "L14",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\034_L14_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L15",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\035_L15_sam.wav",
+    "who": "sam",
+    "line": "L15"
+  },
+  {
+    "id": "L15",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\036_L15_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L16",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\037_L16_sam.wav",
+    "who": "sam",
+    "line": "L16"
+  },
+  {
+    "id": "L16",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\038_L16_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L17",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\039_L17_glitch.wav",
+    "who": "glitch",
+    "line": "L17"
+  },
+  {
+    "id": "L17",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\040_L17_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L18",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\041_L18_sam.wav",
+    "who": "sam",
+    "line": "L18"
+  },
+  {
+    "id": "L18",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\042_L18_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L19",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\043_L19_sam.wav",
+    "who": "sam",
+    "line": "L19"
+  },
+  {
+    "id": "L19",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\044_L19_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L20",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\045_L20_sam.wav",
+    "who": "sam",
+    "line": "L20"
+  },
+  {
+    "id": "L20",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\046_L20_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L21",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\047_L21_sam.wav",
+    "who": "sam",
+    "line": "L21"
+  },
+  {
+    "id": "L21",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\048_L21_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L22",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\049_L22_jack.wav",
+    "who": "jack",
+    "line": "L22"
+  },
+  {
+    "id": "L22",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\050_L22_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L23",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\051_L23_sam.wav",
+    "who": "sam",
+    "line": "L23"
+  },
+  {
+    "id": "L23",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\052_L23_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L23a",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\053_L23a_sam.wav",
+    "who": "sam",
+    "line": "L23a"
+  },
+  {
+    "id": "L23a",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\054_L23a_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L23b",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\055_L23b_jack.wav",
+    "who": "jack",
+    "line": "L23b"
+  },
+  {
+    "id": "L23b",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\056_L23b_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L23c",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\057_L23c_glitch.wav",
+    "who": "glitch",
+    "line": "L23c"
+  },
+  {
+    "id": "L23c",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\058_L23c_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L23d",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\059_L23d_sam.wav",
+    "who": "sam",
+    "line": "L23d"
+  },
+  {
+    "id": "L23d",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\060_L23d_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L23e",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\061_L23e_glitch.wav",
+    "who": "glitch",
+    "line": "L23e"
+  },
+  {
+    "id": "L23e",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\062_L23e_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L23f",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\063_L23f_sam.wav",
+    "who": "sam",
+    "line": "L23f"
+  },
+  {
+    "id": "L23f",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\064_L23f_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L23g",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\065_L23g_jack.wav",
+    "who": "jack",
+    "line": "L23g"
+  },
+  {
+    "id": "L23g",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\066_L23g_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L24",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\067_L24_glitch.wav",
+    "who": "glitch",
+    "line": "L24"
+  },
+  {
+    "id": "L24",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\068_L24_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L25",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\069_L25_glitch.wav",
+    "who": "glitch",
+    "line": "L25"
+  },
+  {
+    "id": "L25",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\070_L25_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L26",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\071_L26_glitch.wav",
+    "who": "glitch",
+    "line": "L26"
+  },
+  {
+    "id": "L26",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\072_L26_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L27",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\073_L27_glitch.wav",
+    "who": "glitch",
+    "line": "L27"
+  },
+  {
+    "id": "L27",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\074_L27_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L28",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\075_L28_sam.wav",
+    "who": "sam",
+    "line": "L28"
+  },
+  {
+    "id": "L28",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\076_L28_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L29",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\077_L29_sam.wav",
+    "who": "sam",
+    "line": "L29"
+  },
+  {
+    "id": "L29",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\078_L29_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L30",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\079_L30_sam.wav",
+    "who": "sam",
+    "line": "L30"
+  },
+  {
+    "id": "L30",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\080_L30_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L31",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\081_L31_jack.wav",
+    "who": "jack",
+    "line": "L31"
+  },
+  {
+    "id": "L31",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\082_L31_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L31a",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\083_L31a_glitch.wav",
+    "who": "glitch",
+    "line": "L31a"
+  },
+  {
+    "id": "L31a",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\084_L31a_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L31b",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\085_L31b_sam.wav",
+    "who": "sam",
+    "line": "L31b"
+  },
+  {
+    "id": "L31b",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\086_L31b_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L31c",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\087_L31c_jack.wav",
+    "who": "jack",
+    "line": "L31c"
+  },
+  {
+    "id": "L31c",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\088_L31c_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L32",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\089_L32_jack.wav",
+    "who": "jack",
+    "line": "L32"
+  },
+  {
+    "id": "L32",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\090_L32_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L33",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\091_L33_glitch.wav",
+    "who": "glitch",
+    "line": "L33"
+  },
+  {
+    "id": "L33",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\092_L33_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L34",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\093_L34_glitch.wav",
+    "who": "glitch",
+    "line": "L34"
+  },
+  {
+    "id": "L34",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\094_L34_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L35",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\095_L35_glitch.wav",
+    "who": "glitch",
+    "line": "L35"
+  },
+  {
+    "id": "L35",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\096_L35_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L36",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\097_L36_sam.wav",
+    "who": "sam",
+    "line": "L36"
+  },
+  {
+    "id": "L36",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\098_L36_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\099_L37_jack.wav",
+    "who": "jack",
+    "line": "L37"
+  },
+  {
+    "id": "L37",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\100_L37_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37a",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\101_L37a_sam.wav",
+    "who": "sam",
+    "line": "L37a"
+  },
+  {
+    "id": "L37a",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\102_L37a_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37b",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\103_L37b_jack.wav",
+    "who": "jack",
+    "line": "L37b"
+  },
+  {
+    "id": "L37b",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\104_L37b_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37c",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\105_L37c_glitch.wav",
+    "who": "glitch",
+    "line": "L37c"
+  },
+  {
+    "id": "L37c",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\106_L37c_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37d",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\107_L37d_sam.wav",
+    "who": "sam",
+    "line": "L37d"
+  },
+  {
+    "id": "L37d",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\108_L37d_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37e",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\109_L37e_jack.wav",
+    "who": "jack",
+    "line": "L37e"
+  },
+  {
+    "id": "L37e",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\110_L37e_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37f",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\111_L37f_sam.wav",
+    "who": "sam",
+    "line": "L37f"
+  },
+  {
+    "id": "L37f",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\112_L37f_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37g",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\113_L37g_glitch.wav",
+    "who": "glitch",
+    "line": "L37g"
+  },
+  {
+    "id": "L37g",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\114_L37g_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37h",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\115_L37h_sam.wav",
+    "who": "sam",
+    "line": "L37h"
+  },
+  {
+    "id": "L37h",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\116_L37h_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37i",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\117_L37i_sam.wav",
+    "who": "sam",
+    "line": "L37i"
+  },
+  {
+    "id": "L37i",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\118_L37i_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37j",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\119_L37j_jack.wav",
+    "who": "jack",
+    "line": "L37j"
+  },
+  {
+    "id": "L37j",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\120_L37j_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37k",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\121_L37k_sam.wav",
+    "who": "sam",
+    "line": "L37k"
+  },
+  {
+    "id": "L37k",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\122_L37k_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37l",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\123_L37l_glitch.wav",
+    "who": "glitch",
+    "line": "L37l"
+  },
+  {
+    "id": "L37l",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\124_L37l_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37m",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\125_L37m_jack.wav",
+    "who": "jack",
+    "line": "L37m"
+  },
+  {
+    "id": "L37m",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\126_L37m_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37n",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\127_L37n_jack.wav",
+    "who": "jack",
+    "line": "L37n"
+  },
+  {
+    "id": "L37n",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\128_L37n_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37o",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\129_L37o_glitch.wav",
+    "who": "glitch",
+    "line": "L37o"
+  },
+  {
+    "id": "L37o",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\130_L37o_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37p",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\131_L37p_sam.wav",
+    "who": "sam",
+    "line": "L37p"
+  },
+  {
+    "id": "L37p",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\132_L37p_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L37q",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\133_L37q_jack.wav",
+    "who": "jack",
+    "line": "L37q"
+  },
+  {
+    "id": "L37q",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\134_L37q_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L38",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\135_L38_sam.wav",
+    "who": "sam",
+    "line": "L38",
+    "outroStart": true
+  },
+  {
+    "id": "L38",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\136_L38_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L39",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\137_L39_jack.wav",
+    "who": "jack",
+    "line": "L39"
+  },
+  {
+    "id": "L39",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\138_L39_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L40",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\139_L40_glitch.wav",
+    "who": "glitch",
+    "line": "L40"
+  },
+  {
+    "id": "L40",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\140_L40_gap.wav",
+    "isSilence": true
+  },
+  {
+    "id": "L41",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\141_L41_sam.wav",
+    "who": "sam",
+    "line": "L41"
+  },
+  {
+    "id": "L41",
+    "file": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\Glitch_Studio_Builder\\data\\episodes\\e2_token_saver\\render\\parts\\142_L41_gap.wav",
+    "isSilence": true
+  }
+]
