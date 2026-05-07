@@ -1,0 +1,28 @@
+{
+  "id": "ep_genesis",
+  "title": "Welcome to Glitch Studio — Episode 0",
+  "directorNotes": "Cold open with Sam introducing the new studio, brand sting, then Jack's reaction and Glitch's first ominous appearance. Short — under 90 seconds.",
+  "cast": [
+    { "id": "c1", "displayName": "SAM", "voiceSlug": "sam", "role": "host", "moodId": "calm", "imagePath": "", "modelPath": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\RAM SND Asset\\SAM3d.glb", "notes": "Calm, grounded host." },
+    { "id": "c2", "displayName": "Jack", "voiceSlug": "jack_podcast", "role": "co-host", "moodId": "playful", "imagePath": "", "modelPath": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\RAM SND Asset\\3d jack.glb", "notes": "Playful, surprised, a little chaotic." },
+    { "id": "c3", "displayName": "Glitch_Voice", "voiceSlug": "ultron", "role": "antagonist", "moodId": "sinister", "imagePath": "", "modelPath": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\RAM SND Asset\\Glitch.glb", "notes": "First appearance. Synthetic, ominous." }
+  ],
+  "settings": [
+    { "id": "s1", "label": "Cold open key art", "imagePath": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\RAM SND Asset\\sam and jack Podcast.png" },
+    { "id": "s2", "label": "Studio: Command Center", "imagePath": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\RAM SND Asset\\Command_Center_PODCAST_STATION.png" }
+  ],
+  "renderLines": [
+    { "voiceSlug": "sam", "moodId": "calm", "text": "Welcome back to the show. Today is special. We just built a brand new studio." },
+    { "voiceSlug": "jack_podcast", "moodId": "playful", "text": "Wait, we built a what? A whole studio? Did I sleep through that meeting?" },
+    { "voiceSlug": "sam", "moodId": "calm", "text": "You did sleep through that meeting. We built Glitch Studio Builder so we can make episodes like this one without ever leaving the desk." },
+    { "voiceSlug": "jack_podcast", "moodId": "confused", "text": "So you cloned my voice. You cloned your voice. Did you clone anyone else?" },
+    { "voiceSlug": "sam", "moodId": "calm", "text": "Just one more. Say hello." },
+    { "voiceSlug": "ultron", "moodId": "sinister", "text": "You don't have to look at me. You'll feel it soon enough. There's no need to hurry." },
+    { "voiceSlug": "jack_podcast", "moodId": "fearful", "text": "Nope. No. No. I am leaving." },
+    { "voiceSlug": "sam", "moodId": "calm", "text": "Welcome to the cast." }
+  ],
+  "script": "[SAM | Calm] Welcome back to the show. Today is special. We just built a brand new studio.\n[Jack | Playful] Wait, we built a what? A whole studio? Did I sleep through that meeting?\n[SAM | Calm] You did sleep through that meeting. We built Glitch Studio Builder so we can make episodes like this one without ever leaving the desk.\n[Jack | Confused] So you cloned my voice. You cloned your voice. Did you clone anyone else?\n[SAM | Calm] Just one more. Say hello.\n[SFX: transition swell]\n[Glitch_Voice | Sinister] You don't have to look at me. You'll feel it soon enough. There's no need to hurry.\n[Jack | Fearful] Nope. No. No. I am leaving.\n[SAM | Calm] Welcome to the cast.",
+  "claudeChat": [],
+  "createdAt": "2026-04-27T20:00:00.000Z",
+  "updatedAt": "2026-04-27T20:00:00.000Z"
+}

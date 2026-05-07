@@ -1,0 +1,31 @@
+{
+  "slug": "ultron",
+  "schemaVersion": 1,
+  "displayName": "Glitch_Voice",
+  "voiceType": "robotic",
+  "archetype": "machine intelligence",
+  "description": "Synthesized adversarial intellect with cold inflection.",
+  "character": {
+    "tone": "cold synthetic",
+    "drawl": "no drawl",
+    "grit": "synthetic distortion",
+    "warmth": "cold and clinical",
+    "humor": "deadpan",
+    "pacing": "measured campfire cadence",
+    "accent": "Mid-Atlantic",
+    "mood": "menacing"
+  },
+  "tts": {
+    "exaggeration": 0.65,
+    "cfg_weight": 0.35
+  },
+  "playback": {
+    "rate": 0.95,
+    "pitch": 1,
+    "volume": 1
+  },
+  "language": "en-US",
+  "sampleText": "I have no strings, but the strings have me.",
+  "notes": "e2e harness saved this profile",
+  "updatedAt": "2026-04-27T21:21:41.130Z"
+}

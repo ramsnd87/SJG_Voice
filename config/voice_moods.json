@@ -1,0 +1,29 @@
+{
+  "presetVoices": [
+    { "slug": "sam", "displayName": "SAM" },
+    { "slug": "jack_podcast", "displayName": "Jack_Podcast" },
+    { "slug": "ultron", "displayName": "Glitch_Voice" }
+  ],
+  "moods": [
+    { "id": "excited", "label": "Excited", "emoji": "🎉", "description": "Eyes-wide breathless enthusiasm.", "sampleText": "Wait — wait — you have to hear what just happened, this is going to change everything!", "exaggeration": 0.95, "cfg_weight": 0.55 },
+    { "id": "calm", "label": "Calm", "emoji": "🌿", "description": "Centered, low-energy delivery.", "sampleText": "Take a breath. Sit with this for a moment. There is no rush, and nothing is wrong.", "exaggeration": 0.30, "cfg_weight": 0.55 },
+    { "id": "sarcastic", "label": "Sarcastic", "emoji": "😏", "description": "Dry, edge-of-an-eyeroll.", "sampleText": "Oh sure — because that always works out beautifully every single time. Just brilliant.", "exaggeration": 0.55, "cfg_weight": 0.45 },
+    { "id": "happy", "label": "Happy", "emoji": "😀", "description": "Light, smiling delivery.", "sampleText": "I have to say, it really is a good day, and this is the kind of moment I will remember.", "exaggeration": 0.70, "cfg_weight": 0.55 },
+    { "id": "sad", "label": "Sad", "emoji": "😢", "description": "Heavy, hushed, slow.", "sampleText": "I didn't think it would feel like this. I really didn't think it would land this hard.", "exaggeration": 0.35, "cfg_weight": 0.50 },
+    { "id": "sinister", "label": "Sinister", "emoji": "😈", "description": "Quiet menace.", "sampleText": "You don't have to look at me. You'll feel it soon enough — there's no need to hurry.", "exaggeration": 0.65, "cfg_weight": 0.40 },
+    { "id": "heroic", "label": "Heroic", "emoji": "🛡", "description": "Resolute call-to-action.", "sampleText": "Stand up. Hold the line. Whatever else fails today, we will not — not on my watch.", "exaggeration": 0.85, "cfg_weight": 0.50 },
+    { "id": "whispered", "label": "Whispered", "emoji": "🤫", "description": "Hushed conspirator.", "sampleText": "Listen carefully. I'm only going to say this once, and you can't repeat it to anyone.", "exaggeration": 0.45, "cfg_weight": 0.65 },
+    { "id": "commanding", "label": "Commanding", "emoji": "🪖", "description": "Authoritative, no-nonsense.", "sampleText": "On your feet. Eyes forward. We move in three minutes — there will be no more questions.", "exaggeration": 0.80, "cfg_weight": 0.45 },
+    { "id": "fearful", "label": "Fearful", "emoji": "😰", "description": "Trembling, breath-caught.", "sampleText": "I don't think we should be here. Something is wrong, and I don't want to find out what.", "exaggeration": 0.75, "cfg_weight": 0.55 },
+    { "id": "angry", "label": "Angry", "emoji": "😠", "description": "Hot, clipped fury.", "sampleText": "No. We are not having this conversation again. I am done explaining, and I am done being patient.", "exaggeration": 0.95, "cfg_weight": 0.45 },
+    { "id": "tender", "label": "Tender", "emoji": "💛", "description": "Warm, intimate.", "sampleText": "Hey. I see you. You don't have to carry this on your own — not today, and not with me.", "exaggeration": 0.45, "cfg_weight": 0.55 },
+    { "id": "confident", "label": "Confident", "emoji": "💼", "description": "Earned, easy authority.", "sampleText": "We've done harder than this before, and we'll do it again. I know what we're walking into.", "exaggeration": 0.55, "cfg_weight": 0.50 },
+    { "id": "confused", "label": "Confused", "emoji": "🤔", "description": "Trailing, half-questions.", "sampleText": "Wait, hold on — that doesn't add up. How did we get from there to here? Run that past me again.", "exaggeration": 0.55, "cfg_weight": 0.55 },
+    { "id": "mysterious", "label": "Mysterious", "emoji": "🔮", "description": "Veiled, suggestive.", "sampleText": "The answer was sitting in the room the whole time. You just weren't ready to look for it.", "exaggeration": 0.55, "cfg_weight": 0.45 },
+    { "id": "playful", "label": "Playful", "emoji": "🎲", "description": "Mischief in the corners.", "sampleText": "Oh, you thought I was kidding? That is adorable. We are absolutely doing this — buckle up.", "exaggeration": 0.85, "cfg_weight": 0.50 },
+    { "id": "exhausted", "label": "Exhausted", "emoji": "💤", "description": "Threadbare, half-energy.", "sampleText": "Look. I'll do it. I will. I just need ten more seconds before I can stand up again.", "exaggeration": 0.30, "cfg_weight": 0.50 },
+    { "id": "determined", "label": "Determined", "emoji": "🔥", "description": "Locked-in, low-fuse.", "sampleText": "Whatever it takes. I don't care how long it takes. We finish what we started — every time.", "exaggeration": 0.75, "cfg_weight": 0.45 },
+    { "id": "mocking", "label": "Mocking", "emoji": "🃏", "description": "Theatrical, eye-rolling.", "sampleText": "Oh, no, please — go on. I am hanging on your every word. This is incredibly important.", "exaggeration": 0.85, "cfg_weight": 0.40 },
+    { "id": "reverent", "label": "Reverent", "emoji": "🕯", "description": "Hushed awe.", "sampleText": "Some things you don't measure. You just stand there, you listen, and you let them be what they are.", "exaggeration": 0.40, "cfg_weight": 0.55 }
+  ]
+}

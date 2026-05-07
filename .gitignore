@@ -1,0 +1,9 @@
+node_modules
+dist
+dist-electron
+data/clips
+data/staged_voices
+data/episodes/**/render/
+data/episodes/**/output/
+*.log
+.DS_Store

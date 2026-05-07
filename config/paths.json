@@ -1,0 +1,25 @@
+{
+  "engineSamTtsBaseUrl": "http://127.0.0.1:8018",
+  "sidecarPort": 8044,
+  "viteDevPort": 5193,
+  "voiceLibraryRoots": [
+    "C:\\Users\\merin_fontvza\\OneDrive\\RAM LOGISTICS SOLUTIONS LLC\\EnginSam\\tts-server\\voices",
+    "C:\\Users\\merin_fontvza\\OneDrive\\RAM LOGISTICS SOLUTIONS LLC\\SAM_PODCAST\\data\\voices"
+  ],
+  "hideSlugs": ["jack"],
+  "assetRoots": [
+    {
+      "id": "ramsnd",
+      "label": "RAM SND Asset",
+      "path": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\RAM SND Asset"
+    }
+  ],
+  "claudeBinary": "claude",
+  "ffmpegEnv": "FFMPEG_PATH",
+  "ramLogoPath": "C:\\Users\\merin_fontvza\\OneDrive\\Desktop\\RAM SND Asset\\RAM_Lette_Logo.png",
+  "writeDirs": {
+    "clipsDir": "data\\clips",
+    "stagedVoicesDir": "data\\staged_voices",
+    "voiceProfilesDir": "data\\voice_profiles"
+  }
+}
